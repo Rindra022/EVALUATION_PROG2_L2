@@ -18,7 +18,7 @@ public class Exam {
     private int coefficient;
     private List<Notes> ListNotes;
 
-    double getCourseGrade (Student student, Instant t){
+    double getExamGrade (Student student, Instant t){
        return ListNotes.stream()
                .filter(notes -> notes.getStudent().equals(student))
                .findFirst()
